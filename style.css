@@ -1,89 +1,93 @@
 body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f8fafc;
-      color: #0f172a;
-    }
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+  padding-bottom: 90px;
+}
 
-    .app {
-      max-width: 390px;
-      margin: 0 auto;
-      min-height: 100vh;
-      background: white;
-      padding: 24px;
-      padding-bottom: 100px;
-      box-sizing: border-box;
-    }
+.app {
+  max-width: 390px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: white;
+  padding: 24px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
 
-    .title {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 16px;
-    }
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
 
-    .subtitle {
-      font-size: 14px;
-      color: #64748b;
-      margin-bottom: 24px;
-    }
+.subtitle {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 24px;
+}
 
-    .card-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-    }
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
 
-    .card-link {
-      text-decoration: none;
-      color: inherit;
-    }
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
 
-    .card {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 16px;
-      padding: 16px;
-      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
-      min-height: 116px;
-      box-sizing: border-box;
-    }
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+  min-height: 116px;
+  box-sizing: border-box;
+}
 
-    .card h2 {
-      font-size: 16px;
-      margin: 0 0 8px;
-    }
+.card h2 {
+  font-size: 16px;
+  margin: 0 0 8px;
+}
 
-    .card p {
-      font-size: 14px;
-      color: #64748b;
-      margin: 0;
-      line-height: 1.5;
-    }
+.card p {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+}
 
-    .button {
-      display: block;
-      width: 100%;
-      margin-top: 24px;
-      height: 48px;
-      line-height: 48px;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 12px;
-      background: #0891b2;
-      color: white;
-      font-size: 14px;
-      font-weight: bold;
-    }
-    .tabbar {
+.button {
+  display: block;
+  width: 100%;
+  margin-top: 24px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+  background: #0891b2;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tabbar {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.96);
   border-top: 1px solid #e2e8f0;
+  box-shadow: 0 -4px 16px rgba(15, 23, 42, 0.08);
   display: flex;
   justify-content: center;
   z-index: 1000;
+  backdrop-filter: blur(8px);
 }
 
 .tabbar-inner {
@@ -101,9 +105,43 @@ body {
   font-size: 12px;
   text-align: center;
   line-height: 1.4;
+  padding: 8px 4px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
 }
 
 .tab-link.active {
   color: #0891b2;
   font-weight: bold;
+  background: #ecfeff;
+}
+
+.tab-link:hover {
+  background: #f1f5f9;
+}
+
+.section {
+  margin-top: 24px;
+}
+
+.stack {
+  display: grid;
+  gap: 16px;
+}
+
+.card-center {
+  text-align: center;
+}
+
+.card-note {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.page-button {
+  margin-top: 16px;
+}
+
+.empty-state-text {
+  margin-top: 8px;
 }

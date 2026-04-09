@@ -3,54 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>주거 안내 | Windsor Korean Life App</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>주거 | Windsor Korean Life App</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <div class="app">
-    <a class="back" href="./index.html">← 홈으로 돌아가기</a>
+    <div class="title">주거 지원</div>
+    <div class="subtitle">렌트, 퇴거 대응, 주거 보조 정보를 한눈에 확인하세요.</div>
 
-    <div class="title">주거 안내</div>
-    <div class="desc">
-      윈저에서 렌트, 퇴거, 긴급 주거 지원 정보를 찾을 수 있는 기본 페이지입니다.
+    <div class="card-grid">
+      <a class="card-link" href="https://www.citywindsor.ca/residents/housing/housing-with-supports-and-homelessness-prevention/emergency-rent-and-utility-assistance" target="_blank" rel="noopener noreferrer">
+        <div class="card">
+          <h2>긴급 렌트 지원</h2>
+          <p>체납 렌트, 퇴거 방지, 첫 달·마지막 달 렌트 지원 정보를 확인하세요.</p>
+        </div>
+      </a>
+
+      <a class="card-link" href="https://www.wechc.com/windsor-essex-housing-benefit" target="_blank" rel="noopener noreferrer">
+        <div class="card">
+          <h2>주거비 보조</h2>
+          <p>Windsor Essex Housing Benefit 신청 정보를 확인하세요.</p>
+        </div>
+      </a>
+
+      <a class="card-link" href="https://www.ontario.ca/page/renting-ontario-your-rights" target="_blank" rel="noopener noreferrer">
+        <div class="card">
+          <h2>세입자 권리</h2>
+          <p>집주인이 퇴거시키려면 정식 통지와 LTB 절차가 필요합니다.</p>
+        </div>
+      </a>
+
+      <a class="card-link" href="https://tribunalsontario.ca/ltb/" target="_blank" rel="noopener noreferrer">
+        <div class="card">
+          <h2>LTB 안내</h2>
+          <p>Landlord and Tenant Board 절차, 신청, 분쟁 해결 정보를 확인하세요.</p>
+        </div>
+      </a>
     </div>
 
-    <div class="section">
-      <h2>먼저 확인할 것</h2>
-      <ul>
-        <li>현재 렌트 계약 상태 확인하기</li>
-        <li>퇴거 통보서 날짜 확인하기</li>
-        <li>긴급 지원 대상 여부 확인하기</li>
-      </ul>
-    </div>
+    <a class="button" href="https://www.citywindsor.ca/residents/housing/housing-with-supports-and-homelessness-prevention/emergency-rent-and-utility-assistance" target="_blank" rel="noopener noreferrer">
+      긴급 렌트 지원 바로 보기
+    </a>
 
-    <div class="section">
-      <h2>도움이 필요한 상황</h2>
-      <ul>
-        <li>월세를 감당하기 어려운 상황</li>
-        <li>퇴거 경고 또는 퇴거 통보를 받은 상황</li>
-        <li>단기 거주지가 급하게 필요한 상황</li>
-      </ul>
-    </div>
+    <div style="margin-top: 24px;">
+      <div class="card" style="margin-bottom: 16px;">
+        <h2>빠른 안내</h2>
+        <p>
+          윈저의 Emergency Rent Assistance Program(Housing Stability Plan)은
+          체납 렌트로 인한 퇴거 방지나 저렴한 주거 확보를 위한 첫 달·마지막 달 렌트 지원에 사용될 수 있습니다.
+        </p>
+      </div>
 
-    <div class="section">
-      <h2>다음 버전에 추가할 기능</h2>
-      <ul>
-        <li>실제 주거 지원 기관 링크</li>
-        <li>신청 자격 요약</li>
-        <li>전화 바로 걸기 버튼</li>
-      </ul>
+      <div class="card" style="margin-bottom: 16px;">
+        <h2>누가 신청할 수 있나요?</h2>
+        <p>
+          윈저 또는 에식스 카운티 거주자 중 소득 기준을 충족하는 경우 신청할 수 있으며,
+          Ontario Works(OW) 또는 ODSP 수급자는 담당 케이스워커를 통해 신청할 수 있습니다.
+        </p>
+      </div>
+
+      <div class="card" style="margin-bottom: 16px;">
+        <h2>퇴거 통지 받았을 때</h2>
+        <p>
+          집주인이 서면 통지를 주더라도 바로 나가야 하는 것은 아닙니다.
+          집주인은 LTB에 신청해 퇴거 명령을 받아야 하며, 세입자는 심리에 참여할 권리가 있습니다.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>연락처</h2>
+        <p>
+          OW: 519-255-5200<br />
+          ODSP: 519-254-1651<br />
+          기타 신청 문의: 519-255-6100 ext. 5294
+        </p>
+      </div>
     </div>
   </div>
+
   <div class="tabbar">
-  <div class="tabbar-inner">
-    <a class="tab-link" href="./index.html">홈</a>
-    <a class="tab-link active" href="./housing.html">주거</a>
-    <a class="tab-link" href="./medical.html">의료</a>
-    <a class="tab-link" href="./map.html">지도</a>
-    <a class="tab-link" href="./saved.html">저장함</a>
+    <div class="tabbar-inner">
+      <a class="tab-link" href="./index.html">홈</a>
+      <a class="tab-link active" href="./housing.html">주거</a>
+      <a class="tab-link" href="./medical.html">의료</a>
+      <a class="tab-link" href="./map.html">지도</a>
+      <a class="tab-link" href="./saved.html">저장함</a>
+    </div>
   </div>
-</div>
-
 </body>
 </html>

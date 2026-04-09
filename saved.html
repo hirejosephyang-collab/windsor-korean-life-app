@@ -3,44 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>저장함 | Windsor Korean Life App</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>저장함 | Windsor Korean Life App</titltle>
+  /style.css" />
 </head>
 <body>
   <div class="app">
-    <a class="back" href="./index.html">← 홈으로 돌아가기</a>
-
     <div class="title">저장함</div>
-    <div class="desc">
-      사용자가 저장한 주거, 의료, 지도 정보를 다시 보는 공간입니다.
+    <div class="subtitle">나중에 다시 보고 싶은 장소와 정보를 모아두는 공간입니다.</div>
+
+    <div class="section">
+      <div class="card card-center">
+        <h2>아직 저장한 항목이 없습니다</h2>
+        <p class="empty-state-text">
+          주거, 의료, 지도 페이지를 둘러보다가 필요한 정보를
+          나중에 다시 쉽게 찾을 수 있도록 여기에 모아둘 수 있습니다.
+        </p>
+      </div>
+    </div>
+
+    <a class="button" href="./map.html">지도 보러 가기</a>
+
+    <div class="section">
+      <div class="card-grid">
+        <a class="card-link" href="./housing.html">
+          <div class="card">
+            <h2>주거 정보 보기</h2>
+            <p>렌트 지원, 퇴거 대응, 주거비 보조 정보를 다시 확인하세요.</p>
+          </div>
+        </a>
+
+        <a class="card-link" href="./medical.html">
+          <div class="card">
+            <h2>의료 정보 보기</h2>
+            <p>가족의사, walk-in clinic, Health811 정보를 확인하세요.</p>
+          </div>
+        </a>
+
+        <a class="card-link" href="./map.html">
+          <div class="card">
+            <h2>생활 정보 지도</h2>
+            <p>시청, 도서관, 지역 자원 위치를 빠르게 찾아보세요.</p>
+          </div>
+        </a>
+
+        <a class="card-link" href="./index.html">
+          <div class="card">
+            <h2>홈으로 돌아가기</h2>
+            <p>전체 메뉴를 다시 보고 원하는 페이지로 이동하세요.</p>
+          </div>
+        </a>
+      </div>
     </div>
 
     <div class="section">
-      <h2>현재 상태</h2>
-      <ul>
-        <li>아직 저장된 항목이 없습니다</li>
-        <li>향후 북마크 기능이 연결될 예정입니다</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>다음 버전에 추가할 기능</h2>
-      <ul>
-        <li>저장한 병원 목록</li>
-        <li>저장한 주거 지원 정보</li>
-        <li>저장한 장소 다시 열기</li>
-      </ul>
+      <div class="card card-note">
+        <h2>추후 추가할 기능</h2>
+        <p>
+          나중에는 저장 버튼, 즐겨찾기 목록, 최근 본 정보 기능을
+          이 페이지에 연결할 수 있습니다.
+        </p>
+      </div>
     </div>
   </div>
+
   <div class="tabbar">
-  <div class="tabbar-inner">
-    <a class="tab-link" href="./index.html">홈</a>
-    <a class="tab-link" href="./housing.html">주거</a>
-    <a class="tab-link" href="./medical.html">의료</a>
-    <a class="tab-link" href="./map.html">지도</a>
-    <a class="tab-link active" href="./saved.html">저장함</a>
+    <div class="tabbar-inner">
+      <a class="tab-link" href="./index.html">홈</a>
+      <a class="tab-link" href="./housing.html">주거</a>
+      <a class="tab-link" href="./medical.html">의료</a>
+      <a class="tab-link" href="./map.html">지도</a>
+      <a class="tab-link active" href="./saved.html">저장함</a>
+    </div>
   </div>
-</div>
-
 </body>
 </html>
