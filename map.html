@@ -4,66 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>지도 안내 | Windsor Korean Life App</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f8fafc;
-      color: #0f172a;
-    }
-
-    .app {
-      max-width: 390px;
-      margin: 0 auto;
-      min-height: 100vh;
-      background: white;
-      padding: 24px;
-      box-sizing: border-box;
-    }
-
-    .back {
-      display: inline-block;
-      margin-bottom: 20px;
-      color: #0891b2;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: bold;
-    }
-
-    .title {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 12px;
-    }
-
-    .desc {
-      font-size: 14px;
-      color: #64748b;
-      line-height: 1.6;
-      margin-bottom: 24px;
-    }
-
-    .section {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 16px;
-      padding: 16px;
-      margin-bottom: 16px;
-    }
-
-    .section h2 {
-      font-size: 16px;
-      margin: 0 0 12px;
-    }
-
-    .section ul {
-      margin: 0;
-      padding-left: 18px;
-      color: #334155;
-      font-size: 14px;
-      line-height: 1.7;
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <div class="app">
@@ -101,5 +42,15 @@
       </ul>
     </div>
   </div>
+  <div class="tabbar">
+  <div class="tabbar-inner">
+    <a class="tab-link" href="./index.html">홈</a>
+    <a class="tab-link" href="./housing.html">주거</a>
+    <a class="tab-link" href="./medical.html">의료</a>
+    <a class="tab-link active" href="./map.html">지도</a>
+    <a class="tab-link" href="./saved.html">저장함</a>
+  </div>
+</div>
+
 </body>
 </html>
