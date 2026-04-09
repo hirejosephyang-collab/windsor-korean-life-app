@@ -39,26 +39,24 @@
       gap: 16px;
     }
 
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
     .card {
       background: #ffffff;
       border: 1px solid #e2e8f0;
       border-radius: 16px;
       padding: 16px;
       box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
-      text-align: left;
-      cursor: pointer;
-      width: 100%;
-    }
-
-    .card.active {
-      border: 2px solid #0891b2;
-      background: #ecfeff;
+      min-height: 116px;
+      box-sizing: border-box;
     }
 
     .card h2 {
       font-size: 16px;
       margin: 0 0 8px;
-      color: #0f172a;
     }
 
     .card p {
@@ -73,35 +71,14 @@
       width: 100%;
       margin-top: 24px;
       height: 48px;
-      border: none;
+      line-height: 48px;
+      text-align: center;
+      text-decoration: none;
       border-radius: 12px;
       background: #0891b2;
       color: white;
       font-size: 14px;
       font-weight: bold;
-      cursor: pointer;
-    }
-
-    .detail-box {
-      margin-top: 24px;
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 16px;
-      padding: 16px;
-    }
-
-    .detail-title {
-      font-size: 18px;
-      font-weight: bold;
-      margin: 0 0 12px;
-    }
-
-    .detail-list {
-      margin: 0;
-      padding-left: 18px;
-      color: #334155;
-      font-size: 14px;
-      line-height: 1.7;
     }
   </style>
 </head>
@@ -111,96 +88,36 @@
     <div class="subtitle">주거, 의료, 마켓 정보를 한 번에 찾기</div>
 
     <div class="card-grid">
-      <button class="card active" onclick="showDetail('housing', this)">
-        <h2>주거</h2>
-        <p>렌트, 퇴거, 긴급 지원</p>
-      </button>
+      <a class="card-link" href="./housing.html">
+        <div class="card">
+          <h2>주거</h2>
+          <p>렌트, 퇴거, 긴급 지원</p>
+        </div>
+      </a>
 
-      <button class="card" onclick="showDetail('medical', this)">
-        <h2>의료</h2>
-        <p>가족의사, walk-in, 811</p>
-      </button>
+      <a class="card-link" href="./medical.html">
+        <div class="card">
+          <h2>의료</h2>
+          <p>가족의사, walk-in, 811</p>
+        </div>
+      </a>
 
-      <button class="card" onclick="showDetail('map', this)">
-        <h2>지도</h2>
-        <p>내 주변 생활 정보</p>
-      </button>
+      <a class="card-link" href="./map.html">
+        <div class="card">
+          <h2>지도</h2>
+          <p>내 주변 생활 정보</p>
+        </div>
+      </a>
 
-      <button class="card" onclick="showDetail('saved', this)">
-        <h2>저장함</h2>
-        <p>저장한 장소 다시 보기</p>
-      </button>
+      <a class="card-link" href="./saved.html">
+        <div class="card">
+          <h2>저장함</h2>
+          <p>저장한 장소 다시 보기</p>
+        </div>
+      </a>
     </div>
 
-    <button class="button" onclick="showEmergency()">긴급 렌트 지원 보기</button>
-
-    <div class="detail-box">
-      <h3 class="detail-title" id="detail-title">주거 안내</h3>
-      <ul class="detail-list" id="detail-list">
-        <li>긴급 렌트 지원 프로그램 확인하기</li>
-        <li>퇴거 통보를 받았을 때 상담 기관 찾기</li>
-        <li>저렴한 임대주택 정보 확인하기</li>
-      </ul>
-    </div>
+    <a class="button" href="./housing.html">긴급 렌트 지원 보기</a>
   </div>
-
-  <script>
-    function showDetail(type, clickedCard) {
-      const title = document.getElementById('detail-title');
-      const list = document.getElementById('detail-list');
-      const cards = document.querySelectorAll('.card');
-
-      cards.forEach(card => card.classList.remove('active'));
-      clickedCard.classList.add('active');
-
-      if (type === 'housing') {
-        title.textContent = '주거 안내';
-        list.innerHTML = `
-          <li>긴급 렌트 지원 프로그램 확인하기</li>
-          <li>퇴거 통보를 받았을 때 상담 기관 찾기</li>
-          <li>저렴한 임대주택 정보 확인하기</li>
-        `;
-      }
-
-      if (type === 'medical') {
-        title.textContent = '의료 안내';
-        list.innerHTML = `
-          <li>가족의사 찾는 방법 확인하기</li>
-          <li>Walk-in 클리닉 위치 알아보기</li>
-          <li>Ontario 811 서비스 이용하기</li>
-        `;
-      }
-
-      if (type === 'map') {
-        title.textContent = '지도 안내';
-        list.innerHTML = `
-          <li>내 주변 한인 마켓 찾기</li>
-          <li>교회, 병원, 생활시설 위치 확인하기</li>
-          <li>자주 가는 장소 저장 기능 준비 중</li>
-        `;
-      }
-
-      if (type === 'saved') {
-        title.textContent = '저장함 안내';
-        list.innerHTML = `
-          <li>아직 저장된 항목이 없습니다</li>
-          <li>앞으로 병원, 주거 정보, 마켓을 저장할 수 있습니다</li>
-          <li>다음 버전에서 북마크 기능을 추가할 예정입니다</li>
-        `;
-      }
-    }
-
-    function showEmergency() {
-      const title = document.getElementById('detail-title');
-      const list = document.getElementById('detail-list');
-
-      title.textContent = '긴급 렌트 지원';
-      list.innerHTML = `
-        <li>위기 상황이라면 지역 주거 지원 기관에 먼저 연락하세요</li>
-        <li>퇴거 관련 서류를 받았다면 날짜를 바로 확인하세요</li>
-        <li>긴급 지원 정보는 이후 실제 기관 데이터로 연결할 예정입니다</li>
-      `;
-    }
-  </script>
 </body>
 </html>
