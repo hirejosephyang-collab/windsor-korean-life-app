@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Windsor Korean Life App</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+    }
+
+    .app {
+      max-width: 390px;
+      margin: 0 auto;
+      min-height: 100vh;
+      background: white;
+      padding: 24px;
+      box-sizing: border-box;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #64748b;
+      margin-bottom: 24px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+    }
+
+    .card h2 {
+      font-size: 16px;
+      margin: 0 0 8px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #64748b;
+      margin: 0;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      margin-top: 24px;
+      height: 48px;
+      border: none;
+      border-radius: 12px;
+      background: #0891b2;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="title">윈저 한인 생활지도</div>
+    <div class="subtitle">주거, 의료, 마켓 정보를 한 번에 찾기</div>
+
+    <div class="card-grid">
+      <div class="card">
+        <h2>주거</h2>
+        <p>렌트, 퇴거, 긴급 지원</p>
+      </div>
+      <div class="card">
+        <h2>의료</h2>
+        <p>가족의사, walk-in, 811</p>
+      </div>
+      <div class="card">
+        <h2>지도</h2>
+        <p>내 주변 생활 정보</p>
+      </div>
+      <div class="card">
+        <h2>저장함</h2>
+        <p>저장한 장소 다시 보기</p>
+      </div>
+    </div>
+
+    <button class="button">긴급 렌트 지원 보기</button>
+  </di
